@@ -24,7 +24,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case WORKPW1:
             if (record->event.pressed) {
                 // when keycode is pressed
-                SEND_STRING("mAXH5678!!");
+                SEND_STRING("");
             } else {
                 // when keycode is released
             }
@@ -32,7 +32,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case PHXPW:
             if (record->event.pressed) {
                 // when keycode is pressed
-                SEND_STRING("PHX3456?15");
+                SEND_STRING("");
             } else {
                 // when keycode is released
             }
