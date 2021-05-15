@@ -90,12 +90,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ),
 /* ADJUST
  * ,-----------------------------------------.                    ,-----------------------------------------.
- * |TSKMGR|      |      |      |      |      |                    |      |      |      |      |      |      |
+ * |TSKMGR|      |      |      |      |c-a-del|                    |      |      |      |      |      |      |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * |      |      |      |      |      |      |                    |      |      |      |      |PRINT |      |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * | CAPS |      |      |      |      |      |-------.    ,-------|      |      |      |      |      |      |
- * |------+------+------+------+------+------|       |    |       |------+------+------+------+------+------|
+ * |------+------+------+------+------+------|gui on |    |gui off|------+------+------+------+------+------|
  * |      |      |      |      |      |      |-------|    |-------|      |      |      |      | EMAIL|      |
  * `-----------------------------------------/       /     \      \-----------------------------------------'
  *                   | LGUI | LALT |LOWER | /Space  /       \Space \  |RAISE |BackSP| DEL  |
@@ -103,10 +103,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                   `----------------------------'           '------''--------------------'
  */
   [_ADJUST] = LAYOUT( \
-  TSKMGR,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
+  TSKMGR,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, LCA(KC_DEL),                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_PSCR, XXXXXXX, \
   KC_CAPS, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
-  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, LCA(KC_DEL), XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, EMAIL,   XXXXXXX,\
+  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, GUI_OFF , GUI_ON, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, EMAIL,   XXXXXXX,\
                              _______, _______, _______, _______, _______,  _______, _______, _______ \
   )
 
